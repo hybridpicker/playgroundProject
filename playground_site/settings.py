@@ -73,6 +73,9 @@ WSGI_APPLICATION = 'playground_site.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
+import os
+
+PROJECT_DIR = os.path.dirname(__file__)
 
 DATABASES = {
     'default': {
@@ -123,6 +126,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 MEDIA_URL = '/media/'
 
+STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
+
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_DIR, 'staticfiles'),
+)
