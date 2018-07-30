@@ -1,8 +1,27 @@
 .navbar {
-  background-color: #0c120c;
-  text-decoration-color: red;
+  background-color: #0C120C;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.3px;
 }
 
-.body {
-  background-color: #ECEBF3;
+.nav-link {
+  color: red;
 }
+
+p {
+  color: #0C120C;
+  font-size: 13pt;
+}
+
+h1 {
+
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 38pt;
+  letter-spacing: -2px;
+}
+ .lead {
+   font-family: 'Helvetica', sans-serif;
+   text-align: center;
+   font-size: 16pt;
+ }

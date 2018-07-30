@@ -4,10 +4,14 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <!-- Font Family -->
+  <style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+</style>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 
   <!-- Schoensgibl CSS -->
   {% load static %}
@@ -20,8 +24,8 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand" href="#">
-          <img src="/media/navbar/Nav_Logo_PG_681.svg" width="30" height="30" alt="">
-        </a>
+      <img src="/media/navbar/Nav_Logo_PG_681.svg" width="30" height="30" alt="">
+    </a>
     <a class="navbar-brand" href="#">Playground</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -29,17 +33,15 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="{% url 'home' %}#info">Info</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="{% url 'home' %}#hoerproben">Hörproben</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="{% url 'home' %}#anfragen">Anfrage</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
+
       </ul>
     </div>
   </nav>
@@ -51,18 +53,103 @@
   <!-- Slides -->
 
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="media/image020.jpg" alt="First slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="media/image020.jpg" alt="First slide">
+      </div>
     </div>
   </div>
-</div>
+
+  <!-- Welcome Banner -->
+
+  <div class="jumbotron" id="info">
+    <div class="container">
+
+      <h1>Playground die Band</h1>
+      <p class="lead">Willkommen auf der offiziellen Seite der Band Playground</p>
+      <hr class="my-4">
+      <p>Bei uns sind sie richtig, wenn sie musik gern haben. besonders live musik. musik die man spürt. die nie gleich klingt. tanzbare musik. partymusik. disco. musik zum zuhören oder mit dem fuß mitwippen.
+        sie sind richtig, wenn sie gerne musik hören und sich dabei gehen lassen wollen. oder einfach in den armen ihres liebsten oder ihrer liebsten so dahinschweben. tanzend. offen oder geschlossen. auf jeden fall tanzend. wir sind für alles offen. solls etwas fetziger sein. oder doch eher ruhiger. gediegener.
+        vom weinviertel über wien, bis nach mödling und baden, haben sich hier sechs junge musiker zusammengefunden, die sie auf ihrem fest, ihrer hochzeit, ihrer party, ihrer firmenfeier begleiten wollen.
+        ganz egal welcher anlass, wir möchten diesen als musiker mit ihnen teilen und unseren teil dazu beitragen, diesen auch musikalisch unvergesslich zu machen.
+
+        playground. wie unser name schon sagt. die bühne ist unser "spielplatz". miteinander spielen. musizieren. einander zuhören.
+        sie sind also richtig bei uns, wenn sie ein freund von guter, ehrlicher live musik sind und gerne zuhören. wer behauptet das nicht gerne von sich?</p>
+      </div>
+    </div>
+    <div class="jumbotron" id="hoerproben">
+      <div class="container">
+
+        <h1>Hörproben</h1>
+        <hr class="my-4">
+        <ul class="list-unstyled">
+          <li class="media">
+            <img class="mr-3" src=".../64x64" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">List-based media object</h5>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+          </li>
+          <li class="media my-4">
+            <img class="mr-3" src=".../64x64" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">List-based media object</h5>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+          </li>
+          <li class="media">
+            <img class="mr-3" src=".../64x64" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">List-based media object</h5>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+    <div class="jumbotron" id="anfragen">
+      <div class="container">
+        <form>
+          <h1>Anfragen</h1>
+          <hr class="my-4">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Name</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Vor- und Zuname">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email-Adresse</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@ebeispiel.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Bitte wählen Sie aus:</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Anfrage</option>
+              <option>Anregung</option>
+              <option>Wunsch</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Nachricht:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary mb-2">Absenden</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Place sticky footer content here.</p>
+
+      </div>
+    </footer>
 
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
-</html>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  </html>
