@@ -25,3 +25,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', homePg.views.home, name='home')
 ]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+def javascript_settings():
+    js_conf = {
+        'page_title': 'Home',
+    }
+    return js_conf
