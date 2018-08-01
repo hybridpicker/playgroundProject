@@ -9,8 +9,6 @@
   @import url('https://fonts.googleapis.com/css?family=Montserrat');
   </style>
 
-  <!-- JQuery -->
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 
   <!-- Import Java -->
   {% load javascript_settings_tags %}
@@ -21,19 +19,16 @@
 
   <!-- Schoensgibl CSS -->
   {% load static %}
-
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 
-
-
-  <title>Playground Title</title>
+  <title>Playground</title>
   <!-- Navbar -->
   <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="{% url 'home' %}#top">
       <img src="/media/navbar/Nav_Logo_PG_681_4.svg" width="30" height="30" alt="">
     </a>
-    <a class="navbar-brand" href="#">Playground</a>
+    <a class="navbar-brand" href="{% url 'home' %}#top">Playground</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -57,18 +52,18 @@
   </nav>
 </head>
 <body>
-
-  <a name="top" id="top"></a>
-
   <!-- Slides -->
-
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="media/band/banner.jpg" alt="First slide">
+  <div class="" id="top">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="media/band/banner2.jpg" alt="First slide">
+        </div>
       </div>
     </div>
+
   </div>
+
 
 
   <!-- Welcome Banner -->
@@ -76,7 +71,7 @@
   <div class="section" id="info">
     <div class="container">
 
-      <h1>Playground die Band</h1>
+      <h1>Playground</h1>
       <p class="lead">Willkommen auf der offiziellen Seite der Band Playground</p>
       <hr class="my-4">
       <p>Bei uns sind sie richtig, wenn sie musik gern haben. besonders live musik. musik die man spürt. die nie gleich klingt. tanzbare musik. partymusik. disco. musik zum zuhören oder mit dem fuß mitwippen.
@@ -90,100 +85,149 @@
     </div>
   </div>
 
+
   <div class="section" id="hoerproben">
     <div class="container">
 
       <h1>Hörproben</h1>
       <hr class="my-4">
-      <ul class="list-unstyled">
-        <li class="media">
-          <img class="mr-3" src=".../64x64" alt="Generic placeholder image">
-          <div class="media-body">
-            <h5 class="mt-0 mb-1">List-based media object</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      <br>
+      <div class="row">
+        <div class="col">
+          <h3>Here I Go Again</h3>
+        </div>
+        <div class="col">
+          <audio controls>
+            <source src="media/mp3/rumsti.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
           </div>
-        </li>
-        <li class="media my-4">
-          <img class="mr-3" src=".../64x64" alt="Generic placeholder image">
-          <div class="media-body">
-            <h5 class="mt-0 mb-1">List-based media object</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h3>Can't Stop</h3>
+        </div>
+        <div class="col">
+          <audio controls>
+            <source src="media/mp3/rumsti.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
           </div>
-        </li>
-        <li class="media">
-          <img class="mr-3" src=".../64x64" alt="Generic placeholder image">
-          <div class="media-body">
-            <h5 class="mt-0 mb-1">List-based media object</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+        </div>
+        <div class="row">
+          <div class="col">
+            <h3>Roll Over Beethoven</h3>
           </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="section" id="band">
-    <div class="container">
-      <h1>Die Band</h1>
-      <hr class="my-4">
-
-
-      <div class="album py-5">
-        <div class="container">
-
+          <div class="col">
+            <audio controls>
+              <source src="media/mp3/rumsti.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
           <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img class="card-img-top" src="media/band/claudia.jpg" alt="">
-                <div class="card-body">
-                  <h3>Claudia Idinger</h3>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="col">
+              <h3>Use Somebody</h3>
+            </div>
+            <div class="col">
+              <audio controls>
+                <source src="media/mp3/rumsti.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h3>Bergwerk</h3>
+              </div>
+              <div class="col">
+                <audio controls>
+                  <source src="media/mp3/rumsti.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <h3>Umbrella</h3>
+                </div>
+                <div class="col">
+                  <audio controls>
+                    <source src="media/mp3/rumsti.mp3" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img class="card-img-top" src="media/band/rafael.jpg" alt="">
-                <div class="card-body">
-                  <h3>Rafael Haider</h3>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card mb-4 shadow-sm">
-                <img class="card-img-top" src="media/band/lukas.jpg" alt="">
-                <div class="card-body">
-                  <h3>Lukas Schönsgibl</h3>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-              </div>
-            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="band">
+        <div class="container">
+          <h1>Die Band</h1>
+          <hr class="my-4">
+
+
+          <div class="album py-5">
             <div class="container">
+
               <div class="row">
                 <div class="col-md-4">
                   <div class="card mb-4 shadow-sm">
-                    <img class="card-img-top" src="media/band/johannes.jpg" alt="">
+                    <img class="card-img-top" src="media/band/claudia.jpg" alt="">
                     <div class="card-body">
-                      <h3>Johannes Suchy</h3>
+                      <h3>Claudia Idinger</h3>
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="card mb-4 shadow-sm">
-                    <img class="card-img-top" src="media/band/flo.jpg" alt="">
+                    <img class="card-img-top" src="media/band/rafael.jpg" alt="">
                     <div class="card-body">
-                      <h3>Florian Schaffellner</h3>
+                      <h3>Rafael Haider</h3>
                       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                   </div>
                 </div>
-                  <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                      <img class="card-img-top" src="media/band/stefan.jpg" alt="">
-                      <div class="card-body">
-                        <h3>Stefan Swobdoa</h3>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="col-md-4">
+                  <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top" src="media/band/lukas.jpg" alt="">
+                    <div class="card-body">
+                      <h3>Lukas Schönsgibl</h3>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card mb-4 shadow-sm">
+                        <img class="card-img-top" src="media/band/johannes.jpg" alt="">
+                        <div class="card-body">
+                          <h3>Johannes Suchy</h3>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card mb-4 shadow-sm">
+                        <img class="card-img-top" src="media/band/flo.jpg" alt="">
+                        <div class="card-body">
+                          <h3>Florian Schaffellner</h3>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card mb-4 shadow-sm">
+                        <img class="card-img-top" src="media/band/stefan.jpg" alt="">
+                        <div class="card-body">
+                          <h3>Stefan Swobdoa</h3>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -194,49 +238,53 @@
         </div>
       </div>
     </div>
-          <div class="section" id="anfragen">
-            <div class="container">
-              <form>
-                <h1>Anfragen</h1>
-                <hr class="my-4">
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Name</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Vor- und Zuname">
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlInput1">Email-Adresse</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@ebeispiel.com">
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlSelect1">Bitte wählen Sie aus:</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Anfrage</option>
-                    <option>Anregung</option>
-                    <option>Wunsch</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Nachricht:</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary mb-2">Absenden</button>
-              </form>
-            </div>
+    <div class="section" id="anfragen">
+      <div class="container">
+        <form>
+          <h1>Anfragen</h1>
+          <hr class="my-4">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Name</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Vor- und Zuname">
           </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email-Adresse</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@ebeispiel.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Bitte wählen Sie aus:</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Anfrage</option>
+              <option>Anregung</option>
+              <option>Wunsch</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Nachricht:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary mb-2">Absenden</button>
+        </form>
+      </div>
+    </div>
 
-          <footer class="footer">
-         <div class="container">
-           <span class="text-muted">Place sticky footer content here.</span>
-         </div>
-       </footer>
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+      </div>
+    </footer>
 
-          <!-- Optional JavaScript -->
+    <!-- JQuery -->
+    <script src="{% static 'js/jquery-3.3.1.js' %}"></script>
 
-          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- Optional JavaScript -->
+    <script src="{% static 'js/java.js' %}"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
 
-          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-          </html>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    </html>
