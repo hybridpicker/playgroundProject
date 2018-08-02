@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'homePg',
     'javascript_settings',
+    'song.apps.SongConfig',
+    'band.apps.BandConfig',
 ]
 
 MIDDLEWARE = [

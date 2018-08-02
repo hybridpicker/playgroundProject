@@ -9,6 +9,7 @@ p {
   font-size: 13pt;
 }
 
+
 h1 {
 
   font-family: 'Montserrat', sans-serif;
@@ -23,6 +24,7 @@ h3 {
   font-size: 22pt;
   letter-spacing: -2px;
 }
+
 .lead {
   font-family: 'Helvetica', sans-serif;
   text-align: center;
@@ -43,14 +45,18 @@ h3 {
   border-color: #BF0C1A;
 }
 
-.footer {
+a {
+  color: #E0E0E1;
+}
+a:hover {
+    color: #E0E0E1;
+    text-decoration: none;
+}
+footer {
   background-color: #0C120C;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.3px;
-  bottom: 0;
   width: 100%;
-  height: 60px;
   line-height: 60px;
-
-
+  padding-bottom: auto;
 }
