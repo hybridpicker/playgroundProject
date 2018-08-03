@@ -1,3 +1,8 @@
+body    {
+        overflow: hidden;
+        overflow-y: auto;
+        }
+
 .navbar {
   background-color: #0C120C;
   font-family: 'Montserrat', sans-serif;
@@ -11,12 +16,12 @@ p {
 
 
 h1 {
-
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   font-size: 38pt;
   letter-spacing: -2px;
 }
+
 h3 {
 
   font-family: 'Montserrat', sans-serif;
