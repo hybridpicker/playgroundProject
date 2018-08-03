@@ -1,7 +1,7 @@
-body    {
+body {
         overflow: hidden;
         overflow-y: auto;
-        }
+}
 
 .navbar {
   background-color: #0C120C;
