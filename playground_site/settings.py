@@ -139,3 +139,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(PROJECT_DIR, 'staticfiles'),
 )
+
+try:
+    from local_settings import *
+except ImportError:
+    pass
