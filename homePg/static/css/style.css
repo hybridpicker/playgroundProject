@@ -1,10 +1,11 @@
 body {
-        overflow: hidden;
-        overflow-y: auto;
+  background-image: url(/media/images/BG.jpg);
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 .navbar {
-  background-color: #0C120C;
+  background-image: url(/media/images/NavPG3.jpg);
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.3px;
 }
@@ -12,6 +13,58 @@ body {
 p {
   color: #0C120C;
   font-size: 13pt;
+  text-align: left;
+}
+
+form {
+  text-align: left;
+}
+
+h1.chunk {
+
+    display: inline-block;
+    margin-bottom: 50px;
+    padding: 0 10px;
+    position: relative;
+    height: 85px;
+    line-height: 1.25;
+    z-index: 1;
+
+
+}
+
+h1 span{
+    font-style: normal;
+    position: relative;
+    z-index: 1;
+    height: 50px;
+    text-align: center;
+
+}
+h1.chunk::after {
+
+background: url(/media/images/h1_chunk3.jpg) 50% repeat;
+bottom: 0;
+content: "";
+height: 22.5px;
+left: 0;
+position: absolute;
+width: 100%;
+
+}
+
+#info {
+    text-align: center;
+}
+#hoerproben {
+    text-align: center;
+}
+#band {
+    text-align: center;
+}
+
+#anfragen {
+    text-align: center;
 }
 
 
@@ -19,6 +72,7 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   font-size: 38pt;
+  color: #000;
   letter-spacing: -2px;
 }
 
@@ -30,19 +84,51 @@ h3 {
   letter-spacing: -2px;
 }
 
+
 .lead {
   font-family: 'Helvetica', sans-serif;
   text-align: center;
   font-size: 16pt;
 }
 
-.section {
-  background-color: #FFFFFF;
+.sectionB {
+  background-image: url(/media/images/SectionBG.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  margin-top: 0px;
+}
+
+.sectionC {
+  background-image: url(/media/images/SectionBG.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 64px;
   padding-bottom: 64px;
   margin-top: 15px;
+}
+
+.section {
+  background-color: #fff;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  margin-top: 0px;
+}
+.sectionA {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  margin-top: 0px;
 }
 
 .btn-primary {

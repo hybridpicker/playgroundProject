@@ -69,7 +69,7 @@
   <div class="section" id="info">
     <div class="container">
 
-      <h1 class "lead">Playground</h1>
+      <h1 class="chunk"><span>Playground</span></h1>
       <p class="lead">Willkommen auf der offiziellen Seite der Band Playground</p>
       <hr class="my-4">
       {% for info in infos.all %}
@@ -80,9 +80,10 @@
   </div>
 
 
-  <div class="section" id="hoerproben">
+  <div class="sectionB" id="hoerproben">
     <div class="container">
-      <h1>Hörproben</h1>
+
+    <h1 class="chunk"><span>Hörproben</span></h1>
       <hr class="my-4">
       <br>
 
@@ -101,9 +102,9 @@
         {% endfor %}
       </div>
     </div>
-    <div class="section" id="band">
+    <div class="sectionA" id="band">
       <div class="container">
-        <h1>Die Band</h1>
+        <h1 class="chunk"><span>Die Band</span></h1>
         <hr class="my-4">
 
         <div class="album py-5">
@@ -125,11 +126,14 @@
         </div>
       </div>
     </div>
-  <div class="section" id="anfragen">
+  <div class="sectionC" id="anfragen">
     <div class="container">
+      <h1 class="chunk"><span>Anfragen</span></h1>
       <form>
-        <h1>Anfragen</h1>
+
+
         <hr class="my-4">
+
         <div class="form-group">
           <label for="exampleFormControlInput1">Name</label>
           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Vor- und Zuname">
