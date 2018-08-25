@@ -12,10 +12,10 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 import sys
+from socket import gethostname, gethostbyname
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
@@ -25,12 +25,9 @@ SECRET_KEY = 'insq%^!vbk*1%q&odxogqmu4^ghb+hw^4ik*3hb=bhui)umt&c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = [ gethostname(), gethostbyname(gethostname()), ]
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -87,7 +84,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'playground',
         'USER': 'postgres',
-        'PASSWORD': 'Ax9kl3',
+        'PASSWORD': 'Ax9kl3-9r',
         'HOST': 'localhost',
         'PORT': '5432',
      }
