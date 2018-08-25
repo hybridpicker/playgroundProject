@@ -5,7 +5,7 @@ body {
 }
 
 .navbar {
-  background-image: url(/media/images/NavPG3.jpg);
+  background: #0C120C;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.3px;
 }
@@ -43,7 +43,7 @@ h1 span{
 }
 h1.chunk::after {
 
-background: url(/media/images/h1_chunk3.jpg) 50% repeat;
+background: url(/media/images/h1_chunk.jpg) 50% repeat;
 bottom: 0;
 content: "";
 height: 22.5px;
@@ -104,7 +104,7 @@ h3 {
 }
 
 .sectionC {
-  background-image: url(/media/images/SectionBG.jpg);
+  background-image: url(/media/images/SectionBG2.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top;
