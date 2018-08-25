@@ -25,11 +25,14 @@ SECRET_KEY = 'insq%^!vbk*1%q&odxogqmu4^ghb+hw^4ik*3hb=bhui)umt&c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = [
-    gethostname(),
-    gethostbyname(gethostname()),
-    '.elasticbeanstalk.com',
-]
+if 'RDS_DB_NAME' in os.environ:
+    ALLOWED_HOSTS = [
+        gethostname(),
+        gethostbyname(gethostname()),
+        '.elasticbeanstalk.com',
+        ]
+else:
+    ALLOWED_HOSTS =['localhost']
 
 # Application definition
 INSTALLED_APPS = [
@@ -83,16 +86,29 @@ PROJECT_DIR = os.path.dirname(__file__)
 
 # Covers regular testing and django-coverage
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'playground',
-        'USER': 'postgres',
-        'PASSWORD': 'Ax9kl3-9r',
-        'HOST': 'localhost',
-        'PORT': '5432',
-     }
-}
+#RDS Beanstalk Settings
+if 'RDS_DB_NAME' in os.environ:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': os.environ['RDS_DB_NAME'],
+            'USER': os.environ['RDS_USERNAME'],
+            'PASSWORD': os.environ['RDS_PASSWORD'],
+            'HOST': os.environ['RDS_HOSTNAME'],
+            'PORT': os.environ['RDS_PORT'],
+        }
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'playground',
+            'USER': 'postgres',
+            'PASSWORD': 'Ax9kl3-9r',
+            'HOST': 'localhost',
+            'PORT': '5432',
+            }
+        }
 
 if 'test' in sys.argv or 'test_coverage' in sys.argv:
     DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
