@@ -25,7 +25,11 @@ SECRET_KEY = 'insq%^!vbk*1%q&odxogqmu4^ghb+hw^4ik*3hb=bhui)umt&c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = [ gethostname(), gethostbyname(gethostname()), ]
+ALLOWED_HOSTS = [
+    gethostname(),
+    gethostbyname(gethostname()),
+    '.elasticbeanstalk.com',
+]
 
 # Application definition
 INSTALLED_APPS = [
