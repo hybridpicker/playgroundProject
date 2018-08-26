@@ -154,15 +154,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
 
-STATIC_ROOT = os.path.join(PROJECT_DIR, '..', 'www', 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, '..', 'www', 'static')
 
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
     os.path.join(PROJECT_DIR, 'staticfiles'),
 )
-
-try:
-    from local_settings import *
-except ImportError:
-    pass
