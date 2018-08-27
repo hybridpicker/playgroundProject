@@ -1,3 +1,5 @@
+{% load static %}
+{% load javascript_settings_tags %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,15 +13,15 @@
 
 
   <!-- Import Java -->
-  {% load javascript_settings_tags %}
   <script type="text/javascript">{% javascript_settings %}</script>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   <!-- Schoensgibl CSS -->
-  {% load static %}
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  <link rel="shortcut icon" href="{% static 'favicon/pg.ico' %}" />
 
 
   <title>Playground</title>
@@ -166,15 +168,15 @@
       <div class="row">
         <div class="col-md-8" align="left">
           <span class="text-muted">
-            Playground © 2018 | <a href="#">Impressum</a> | Webdesign <a href="#">Schoensgibl</a>
+            Playground © 2018 | <a href="#">Impressum</a> | Webdesign <a href="https://schoensgibl.com" target="_blank">Schoensgibl</a>
           </span>
         </div>
         <div class="col md-2">
         </div>
         <div class="col-md-2" align="center">
-            <img src="media/social/facebook.png" alt="" width="30" height="30" hspace="5">
-            <img src="media/social/instagram.png" alt="" width="30" height="30" hspace="5">
-            <img src="media/social/youtube.png" alt="" width="30" height="30" hspace="5">
+            <a href="https://www.facebook.com/Playground-131845666859714" target="_blank"><img src="media/social/facebook.png" alt="" width="27" height="27" hspace="5">
+            <a href="https://www.instagram.com/playground_liveband" target="_blank"><img src="media/social/instagram.png" alt="" width="27" height="27" hspace="5">
+            <a href="https://www.youtube.com" target="_blank"><img src="media/social/youtube.png" alt="" width="27" height="27" hspace="5">
         </div>
       </div>
     </div>
