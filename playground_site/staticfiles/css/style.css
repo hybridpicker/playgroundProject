@@ -139,34 +139,21 @@ h3 {
   margin-top: 0px;
 }
 @media only screen and (max-width: 450px) {
-    body {
-      background-image: none !important;
-    }
     .section {
         padding-left: 15px;
         padding-right: 15px;
       }
     .sectionA {
-        background-image: url(/media/images/BG.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
         padding-left: 15px;
         padding-right: 15px;
     }
     .sectionB {
         background-image: url(/media/images/SectionBGmobile.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
         padding-left: 15px;
         padding-right: 15px;
     }
     .sectionC {
         background-image: url(/media/images/SectionBG2mobile.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: top;
         padding-left: 15px;
         padding-right: 15px;
     }
