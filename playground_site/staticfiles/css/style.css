@@ -1,28 +1,23 @@
 body {
-  background-image: url(/media/images/BG.jpg);
+  background-image: url(/media/images/bg.jpg);
   overflow: hidden;
   overflow-y: auto;
   overflow-x: auto;
 }
-
 .navbar {
   background: #0C120C;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.3px;
 }
-
 p {
   color: #0C120C;
   font-size: 13pt;
   text-align: left;
 }
-
 form {
   text-align: left;
 }
-
 h1.chunk {
-
     display: inline-block;
     margin-bottom: 50px;
     padding: 0 10px;
@@ -30,20 +25,15 @@ h1.chunk {
     height: 85px;
     line-height: 1.25;
     z-index: 1;
-
-
 }
-
 h1 span{
     font-style: normal;
     position: relative;
     z-index: 1;
     height: 50px;
     text-align: center;
-
 }
 h1.chunk::after {
-
 background: url(/media/images/h1_chunk.jpg) 50% repeat;
 bottom: 0;
 content: "";
@@ -51,7 +41,6 @@ height: 22.5px;
 left: 0;
 position: absolute;
 width: 100%;
-
 }
 
 #info {
@@ -67,8 +56,6 @@ width: 100%;
 #anfragen {
     text-align: center;
 }
-
-
 h1 {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
@@ -76,31 +63,19 @@ h1 {
   color: #000;
   letter-spacing: -2px;
 }
-
-@media only screen and (max-width: 450px) {
-    h1 {
-        font-size: 30pt;
-    }
-}
-
-
 h3 {
-
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   font-size: 22pt;
   letter-spacing: -2px;
 }
-
-
 .lead {
   font-family: 'Helvetica', sans-serif;
   text-align: center;
   font-size: 16pt;
 }
-
 .sectionB {
-  background-image: url(/media/images/SectionBG.jpg);
+  background-image: url(/media/images/sectionbg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -110,9 +85,8 @@ h3 {
   padding-bottom: 64px;
   margin-top: 0px;
 }
-
 .sectionC {
-  background-image: url(/media/images/SectionBG2.jpg);
+  background-image: url(/media/images/sectionbg2.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top;
@@ -122,7 +96,6 @@ h3 {
   padding-bottom: 64px;
   margin-top: 15px;
 }
-
 .section {
   background-color: #fff;
   padding-left: 32px;
@@ -138,33 +111,11 @@ h3 {
   padding-bottom: 64px;
   margin-top: 0px;
 }
-@media only screen and (max-width: 450px) {
-    .section {
-        padding-left: 15px;
-        padding-right: 15px;
-      }
-    .sectionA {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .sectionB {
-        background-image: url(/media/images/SectionBGmobile.jpg);
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .sectionC {
-        background-image: url(/media/images/SectionBG2mobile.jpg);
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-}
-
 
 .btn-primary {
   background-color: #BF0C1A;
   border-color: #BF0C1A;
 }
-
 a {
   color: #E0E0E1;
 }
@@ -181,8 +132,28 @@ footer {
   line-height: 60px;
   padding-bottom: auto;
 }
-
 @media only screen and (max-width: 450px) {
+    h1 {
+        font-size: 30pt;
+    }
+    .section {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .sectionA {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .sectionB {
+      background-image: url(/media/images/sectionmobile.jpg);
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .sectionC {
+      background-image: url(/media/images/section2mobile.jpg);
+      padding-left: 15px;
+      padding-right: 15px;
+    }
     footer {
       line-height: 60px;
     }
@@ -193,11 +164,11 @@ footer {
         line-height: 25px;
     }
     .mobile-hide {
-      display:none !important;
+      display: none !important;
     }
 }
 @media only screen and (min-width: 450px) {
     .mobile-show {
-      display:none !important;
+      display: none !important;
     }
 }
