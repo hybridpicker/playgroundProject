@@ -149,10 +149,18 @@ h3 {
     .sectionB {
         padding-left: 15px;
         padding-right: 15px;
+        background-image: url(/media/images/SectionBG.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
     }
     .sectionC {
         padding-left: 15px;
         padding-right: 15px;
+        background-image: url(/media/images/SectionBG2.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: top;
     }
 }
 
