@@ -139,6 +139,12 @@ h3 {
   margin-top: 0px;
 }
 @media only screen and (max-width: 450px) {
+    body {
+      background-image: url(/media/images/BG.jpg);
+      overflow: hidden;
+      overflow-y: auto;
+      overflow-x: auto;
+    }
     .section {
         padding-left: 15px;
         padding-right: 15px;
