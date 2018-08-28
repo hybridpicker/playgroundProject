@@ -76,6 +76,13 @@ h1 {
   letter-spacing: -2px;
 }
 
+@media only screen and (max-width: 450px) {
+    h1 {
+        font-size: 30pt;
+    }
+}
+
+
 h3 {
 
   font-family: 'Montserrat', sans-serif;
@@ -130,6 +137,25 @@ h3 {
   padding-bottom: 64px;
   margin-top: 0px;
 }
+@media only screen and (max-width: 450px) {
+    .section {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    .sectionA {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .sectionB {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .sectionC {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
 
 .btn-primary {
   background-color: #BF0C1A;
@@ -151,4 +177,16 @@ footer {
   width: 100%;
   line-height: 60px;
   padding-bottom: auto;
+}
+
+@media only screen and (max-width: 450px) {
+    footer {
+      line-height: 60px;
+    }
+    .footerLinks {
+        padding-top: 12px;
+        font-size: 12px;
+        text-align: center;
+        line-height: 25px;
+    }
 }
