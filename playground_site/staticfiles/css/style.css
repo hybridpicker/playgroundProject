@@ -140,16 +140,17 @@ h3 {
 }
 @media only screen and (max-width: 450px) {
     body {
-      background-image: url(/media/images/BG.jpg);
-      overflow: hidden;
-      overflow-y: auto;
-      overflow-x: auto;
+      background-image: none !important;
     }
     .section {
         padding-left: 15px;
         padding-right: 15px;
       }
     .sectionA {
+        background-image: url(/media/images/BG.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
         padding-left: 15px;
         padding-right: 15px;
     }
