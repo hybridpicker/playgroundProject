@@ -147,13 +147,20 @@ h3 {
         padding-right: 15px;
     }
     .sectionB {
+        background-image: url(/media/images/SectionBGmobile.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
         padding-left: 15px;
         padding-right: 15px;
     }
     .sectionC {
+        background-image: url(/media/images/SectionBG2mobile.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: top;
         padding-left: 15px;
         padding-right: 15px;
-
     }
 }
 
@@ -189,5 +196,13 @@ footer {
         font-size: 12px;
         text-align: center;
         line-height: 25px;
+    }
+    .mobile-hide {
+      display:none !important;
+    }
+}
+@media only screen and (min-width: 450px) {
+    .mobile-show {
+      display:none !important;
     }
 }
