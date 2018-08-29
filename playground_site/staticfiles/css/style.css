@@ -145,12 +145,14 @@ footer {
       padding-right: 15px;
     }
     .sectionB {
-/*      background-image: url(/media/images/sectionmobile.jpg); */
+      background-image: url(/media/images/sectionmobile.jpg);
+      background-position: top;
       padding-left: 15px;
       padding-right: 15px;
     }
     .sectionC {
-/*     background-image: url(/media/images/section2mobile.jpg); */
+      background-image: url(/media/images/section2mobile.jpg);
+      background-position: top;
       padding-left: 15px;
       padding-right: 15px;
     }
