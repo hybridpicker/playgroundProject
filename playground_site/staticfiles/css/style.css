@@ -132,7 +132,7 @@ footer {
   line-height: 60px;
   padding-bottom: auto;
 }
-@media only screen and (max-width: 350px) {
+@media screen and (max-width: 350px) {
     h1 {
         font-size: 30pt;
     }
@@ -169,7 +169,7 @@ footer {
       display: none !important;
     }
 }
-@media only screen and (min-width: 350px) {
+@media screen and (min-width: 350px) {
     .mobile-show {
       display: none !important;
     }
