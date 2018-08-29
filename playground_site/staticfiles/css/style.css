@@ -132,7 +132,7 @@ footer {
   line-height: 60px;
   padding-bottom: auto;
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 400px) {
     h1 {
         font-size: 30pt;
     }
@@ -145,12 +145,12 @@ footer {
       padding-right: 15px;
     }
     .sectionB {
-      background-image: url(/media/images/sectionmobile.jpg);
+/*      background-image: url(/media/images/sectionmobile.jpg); */
       padding-left: 15px;
       padding-right: 15px;
     }
     .sectionC {
-      background-image: url(/media/images/section2mobile.jpg);
+/*      background-image: url(/media/images/section2mobile.jpg); */
       padding-left: 15px;
       padding-right: 15px;
     }
@@ -167,7 +167,7 @@ footer {
       display: none !important;
     }
 }
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 400px) {
     .mobile-show {
       display: none !important;
     }
