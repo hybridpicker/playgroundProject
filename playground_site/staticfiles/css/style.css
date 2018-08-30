@@ -132,7 +132,7 @@ footer {
   line-height: 60px;
   padding-bottom: auto;
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
     h1 {
         font-size: 30pt;
     }
@@ -153,6 +153,7 @@ footer {
     .sectionC {
       background: url(/media/images/section2mobile.jpg);
       background-position: top;
+      background-attachment: unset;
       padding-left: 15px;
       padding-right: 15px;
     }
@@ -160,16 +161,52 @@ footer {
       line-height: 60px;
     }
     .footerLinks {
-        padding-top: 12px;
-        font-size: 12px;
-        text-align: center;
-        line-height: 25px;
+      padding-top: 12px;
+      font-size: 12px;
+      text-align: center;
+      line-height: 25px;
     }
     .mobile-hide {
       display: none !important;
     }
 }
-@media screen and (min-width: 350px) {
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 36pt;
+    }
+    .section {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .sectionA {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .sectionB {
+      background-position: top;
+      background-attachment: unset;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .sectionC {
+      background-position: top;
+      background-attachment: unset;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    footer {
+      line-height: 60px;
+    }
+    .footerLinks {
+      padding-top: 12px;
+      font-size: 14px;
+      text-align: center;
+      line-height: 25px;
+    }
+}
+
+@media screen and (min-width: 450px) {
     .mobile-show {
       display: none !important;
     }
