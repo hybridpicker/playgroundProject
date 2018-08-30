@@ -1,5 +1,5 @@
 body {
-  background-image: url(/media/images/bg.jpg);
+  background: url(/media/images/bg.jpg);
   overflow: hidden;
   overflow-y: auto;
   overflow-x: auto;
@@ -75,7 +75,7 @@ h3 {
   font-size: 16pt;
 }
 .sectionB {
-  background-image: url(/media/images/sectionbg.jpg);
+  background: url(/media/images/sectionbg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -86,7 +86,7 @@ h3 {
   margin-top: 0px;
 }
 .sectionC {
-  background-image: url(/media/images/sectionbg2.jpg);
+  background: url(/media/images/sectionbg2.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top;
@@ -145,13 +145,13 @@ footer {
       padding-right: 15px;
     }
     .sectionB {
-      background-image: url(/media/images/sectionmobile.jpg);
+      background: url(/media/images/sectionmobile.jpg);
       background-position: top;
       padding-left: 15px;
       padding-right: 15px;
     }
     .sectionC {
-      background-image: url(/media/images/section2mobile.jpg);
+      background: url(/media/images/section2mobile.jpg);
       background-position: top;
       padding-left: 15px;
       padding-right: 15px;
