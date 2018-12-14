@@ -6,6 +6,8 @@ class Member(models.Model):
     name = models.CharField(max_length=255)
     image = models.ImageField(upload_to='images/', default='member_imageDefault')
     info = models.TextField()
+    def __str__(self):
+        return '%s' % (self.name)
 
 class Info(models.Model):
     info = models.TextField()
