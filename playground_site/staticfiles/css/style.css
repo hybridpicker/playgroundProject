@@ -76,7 +76,7 @@ h3 {
 }
 .sectionB {
   background: url(/media/images/sectionbg.jpg);
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   background-attachment: fixed;
   background-position: center;
   padding-left: 32px;
