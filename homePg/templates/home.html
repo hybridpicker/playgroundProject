@@ -60,7 +60,7 @@
 </head>
 <body>
   <!-- Slides -->
-  <div class="fade" id="top">
+  <div class="" id="top">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -81,7 +81,7 @@
       <p class="lead fade">Willkommen auf der offiziellen Seite der Band Playground</p>
       <hr class="my-4">
       {% for info in infos.all %}
-      <p class="fade"> {{ info.info }} </p>
+      <p class=""> {{ info.info }} </p>
       {% endfor %}
       </div>
     </div>
@@ -94,7 +94,9 @@
     <h1 class="chunk fade"><span>Hörproben</span></h1>
       <hr class="my-4">
       <br>
-      <p class="fade"> Sehen Sie Playground als Ihr Invest in einen gelungenen Abend. Sie suchen keine Hintergrundmusik für Ihre Feier, Sie suchen Playground als Initialzündung für Ihre Party. Gut gegessen und getrunken? Dann ab zur Bühne und mit den besten Songs der der letzten 30 Jahre abfeiern </p>
+      <p class="fade"> <p>Sehen Sie Playground als Ihr Invest in einen gelungenen Abend.
+       Sie suchen keine Hintergrundmusik für Ihre Feier, Sie suchen Playground als Initialzündung für Ihre Party.
+     Gut gegessen und getrunken? Dann ab zur Bühne und mit den besten Songs der der letzten 30 Jahre abfeiern. </p>
       </div>
       {% for song in songs.all %}
       <div class="row fade">
@@ -116,7 +118,7 @@
         <h1 class="chunk fade"><span>Die Band</span></h1>
         <hr class="my-4">
 
-        <div class="album py-5 fade">
+        <div class="album py-5">
           <div class="container">
             <div class="row">
               {% for member in members.all %}
@@ -135,8 +137,8 @@
       </div>
     </div>
   <div class="sectionC" id="anfragen">
-    <div class="container fade">
-      <h1 class="chunk"><span>Anfragen</span></h1>
+    <div class="container">
+      <h1 class="chunk fade"><span>Anfragen</span></h1>
       <form>
 
         <hr class="my-4">
