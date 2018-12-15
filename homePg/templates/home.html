@@ -60,7 +60,7 @@
 </head>
 <body>
   <!-- Slides -->
-  <div class="" id="top">
+  <div class="fade" id="top">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -79,7 +79,7 @@
 
       <h1 class="chunk fade"><span>Playground</span></h1>
       <p class="lead fade">Willkommen auf der offiziellen Seite der Band Playground</p>
-      <hr class="my-4 fade">
+      <hr class="my-4">
       {% for info in infos.all %}
       <p class="fade"> {{ info.info }} </p>
       {% endfor %}
