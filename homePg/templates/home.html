@@ -35,7 +35,7 @@
     <a class="navbar-brand" href="{% url 'home' %}#top">
       <img src="/media/images/Nav_Logo_PG_681.svg" width="30" height="30" alt="">
     </a>
-    <a class="navbar-brand" href="{% url 'home' %}#top">Playground</a>
+    <a class="navbar-brand fade" href="{% url 'home' %}#top">Playground</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -77,11 +77,11 @@
   <div class="section" id="info">
     <div class="container">
 
-      <h1 class="chunk fall"><span>Playground</span></h1>
-      <p class="lead fall">Willkommen auf der offiziellen Seite der Band Playground</p>
-      <hr class="my-4">
+      <h1 class="chunk fade"><span>Playground</span></h1>
+      <p class="lead fade">Willkommen auf der offiziellen Seite der Band Playground</p>
+      <hr class="my-4 fade">
       {% for info in infos.all %}
-      <p> {{ info.info }} </p>
+      <p class="fade"> {{ info.info }} </p>
       {% endfor %}
       </div>
     </div>
@@ -91,13 +91,13 @@
   <div class="sectionB" id="hoerproben">
     <div class="container">
 
-    <h1 class="chunk fall"><span>Hörproben</span></h1>
+    <h1 class="chunk fade"><span>Hörproben</span></h1>
       <hr class="my-4">
       <br>
-      <p class="fall"> Sehen Sie Playground als Ihr Invest in einen gelungenen Abend. Sie suchen keine Hintergrundmusik für Ihre Feier, Sie suchen Playground als Initialzündung für Ihre Party. Gut gegessen und getrunken? Dann ab zur Bühne und mit den besten Songs der der letzten 30 Jahre abfeiern </p>
+      <p class="fade"> Sehen Sie Playground als Ihr Invest in einen gelungenen Abend. Sie suchen keine Hintergrundmusik für Ihre Feier, Sie suchen Playground als Initialzündung für Ihre Party. Gut gegessen und getrunken? Dann ab zur Bühne und mit den besten Songs der der letzten 30 Jahre abfeiern </p>
       </div>
       {% for song in songs.all %}
-      <div class="row fall">
+      <div class="row fade">
         <div class="col">
           <h3>{{ song.title }}</h3>
         </div>
@@ -113,10 +113,10 @@
     </div>
     <div class="sectionA" id="band">
       <div class="container">
-        <h1 class="chunk fall"><span>Die Band</span></h1>
+        <h1 class="chunk fade"><span>Die Band</span></h1>
         <hr class="my-4">
 
-        <div class="album py-5 fall">
+        <div class="album py-5 fade">
           <div class="container">
             <div class="row">
               {% for member in members.all %}
@@ -135,7 +135,7 @@
       </div>
     </div>
   <div class="sectionC" id="anfragen">
-    <div class="container fall">
+    <div class="container fade">
       <h1 class="chunk"><span>Anfragen</span></h1>
       <form>
 
