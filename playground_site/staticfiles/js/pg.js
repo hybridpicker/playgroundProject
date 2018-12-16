@@ -1,5 +1,4 @@
 $( document ).ready(function() {
-  console.log( "ready!" );
   const reveals = Array.from(document.querySelectorAll(".fade"));
 
   const DELAY_PER_ITEM = 200;

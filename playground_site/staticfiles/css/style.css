@@ -9,6 +9,17 @@ body {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.3px;
 }
+.navbar-nav .nav-link.active {
+  text-decoration: none;
+  color: #E0E0E1;
+  border-bottom: 0.2rem solid #E0E0E1;
+  padding-bottom: 0px;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}
+
 p {
   color: #0C120C;
   font-size: 13pt;
@@ -120,8 +131,10 @@ a {
   color: #E0E0E1;
 }
 a:hover {
-    color: #E0E0E1;
-    text-decoration: none;
+  text-decoration: none;
+  color: #E0E0E1;
+  border-bottom: 0.2rem solid #E0E0E1;
+  padding-bottom: 0px;
 }
 footer {
   background-color: #0C120C;

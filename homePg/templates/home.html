@@ -30,6 +30,20 @@
 
 
   <title>Playground</title>
+
+  <script type="text/javascript">
+  $(function(){
+    $('a.nav-link').click(function(){
+      $('a.nav-link.active').removeClass('active');
+      $(this).addClass('active');
+    });
+
+  });
+  </script>
+
+
+</head>
+<body>
   <!-- Navbar -->
   <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
     <a class="navbar-brand" href="{% url 'home' %}#top">
@@ -40,7 +54,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ml-auto" id="top-menu">
         <li class="nav-item">
           <a class="nav-link" href="{% url 'home' %}#info">Info</a>
         </li>
@@ -57,8 +71,7 @@
       </ul>
     </div>
   </nav>
-</head>
-<body>
+
   <!-- Slides -->
   <div class="" id="top">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
@@ -83,118 +96,118 @@
       {% for info in infos.all %}
       <p class=""> {{ info.info }} </p>
       {% endfor %}
-      </div>
     </div>
   </div>
+</div>
 
 
-  <div class="sectionB" id="hoerproben">
-    <div class="container">
+<div class="sectionB" id="hoerproben">
+  <div class="container">
 
     <h1 class="chunk fade"><span>Hörproben</span></h1>
-      <hr class="my-4">
-    </br>
-      {% for song in songs.all %}
-      <div class="row fade">
-        <div class="col">
-          <h3>{{ song.title }}</h3>
-        </div>
-        <div class="col">
-          <audio controls>
-            <source src="{{ song.audio.url }}" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-          </div>
-        </div>
-        {% endfor %}
+    <hr class="my-4">
+  </br>
+  {% for song in songs.all %}
+  <div class="row fade">
+    <div class="col">
+      <h3>{{ song.title }}</h3>
+    </div>
+    <div class="col">
+      <audio controls>
+        <source src="{{ song.audio.url }}" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
       </div>
     </div>
-    <div class="sectionA" id="band">
-      <div class="container">
-        <h1 class="chunk fade"><span>Die Band</span></h1>
-        <hr class="my-4">
+    {% endfor %}
+  </div>
+</div>
+<div class="sectionA" id="band">
+  <div class="container">
+    <h1 class="chunk fade"><span>Die Band</span></h1>
+    <hr class="my-4">
 
-        <div class="album py-5">
-          <div class="container">
-            <div class="row">
-              {% for member in members.all %}
-              <div class="col-md-4">
-                <div class="card mb-4 shadow-sm">
-                  <img class="card-img-top" src="{{ member.image.url }}" alt="">
-                  <div class="card-body">
-                    <h3>{{ member.name }}</h3>
-                  </div>
-                </div>
+    <div class="album py-5">
+      <div class="container">
+        <div class="row">
+          {% for member in members.all %}
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="card-img-top" src="{{ member.image.url }}" alt="">
+              <div class="card-body">
+                <h3>{{ member.name }}</h3>
               </div>
-              {% endfor %}
             </div>
           </div>
+          {% endfor %}
         </div>
       </div>
-    </div>
-  <div class="sectionC" id="anfragen">
-    <div class="container">
-      <h1 class="chunk fade"><span>Anfragen</span></h1>
-      <form>
-
-        <hr class="my-4">
-
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Name</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Vor- und Zuname">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Email-Adresse</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@ebeispiel.com">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">Bitte wählen Sie aus:</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>Anfrage</option>
-            <option>Anregung</option>
-            <option>Wunsch</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Nachricht:</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary mb-2">Absenden</button>
-      </form>
-
-
-      </article>
     </div>
   </div>
+</div>
+<div class="sectionC" id="anfragen">
+  <div class="container">
+    <h1 class="chunk fade"><span>Anfragen</span></h1>
+    <form>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 footerLinks" align="left">
-          <span class="text-muted">
-            Playground © 2018 | <a href="#">Impressum</a> | Webdesign <a href="https://schoensgibl.com" target="_blank">Schoensgibl</a>
-          </span>
-        </div>
-        <div class="col md-2">
-        </div>
-        <div class="col-md-2" align="center">
-            <a href="https://www.facebook.com/Playground-131845666859714" target="_blank"><img src="media/social/facebook.png" alt="" width="27" height="27" hspace="5">
-            <a href="https://www.instagram.com/playground_liveband" target="_blank"><img src="media/social/instagram.png" alt="" width="27" height="27" hspace="5">
+      <hr class="my-4">
+
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Name</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Vor- und Zuname">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email-Adresse</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@ebeispiel.com">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Bitte wählen Sie aus:</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>Anfrage</option>
+          <option>Anregung</option>
+          <option>Wunsch</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Nachricht:</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary mb-2">Absenden</button>
+    </form>
+
+
+  </article>
+</div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 footerLinks" align="left">
+        <span class="text-muted">
+          Playground © 2018 | <a href="#">Impressum</a> | Webdesign <a href="https://schoensgibl.com" target="_blank">Schoensgibl</a>
+        </span>
+      </div>
+      <div class="col md-2">
+      </div>
+      <div class="col-md-2" align="center">
+        <a href="https://www.facebook.com/Playground-131845666859714" target="_blank"><img src="media/social/facebook.png" alt="" width="27" height="27" hspace="5">
+          <a href="https://www.instagram.com/playground_liveband" target="_blank"><img src="media/social/instagram.png" alt="" width="27" height="27" hspace="5">
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
 
-  <!-- JQuery -->
-  <script src="{% static 'js/jquery-3.3.1.js' %}"></script>
+    <!-- JQuery -->
+    <script src="{% static 'js/jquery-3.3.1.js' %}"></script>
 
-  <!-- Optional JavaScript -->
-  <script src="{% static 'js/java.js' %}"></script>
+    <!-- Optional JavaScript -->
+    <script src="{% static 'js/java.js' %}"></script>
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-  </html>
+    </html>
