@@ -9,7 +9,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.3px;
 }
-.navbar-nav .nav-link.active {
+#top-menu .navbar-nav .nav-link.active {
   text-decoration: none;
   color: #E0E0E1;
   border-bottom: 0.2rem solid #E0E0E1;
@@ -130,7 +130,7 @@ h3 {
 a {
   color: #E0E0E1;
 }
-a:hover {
+#top-menu a:hover {
   text-decoration: none;
   color: #E0E0E1;
   border-bottom: 0.2rem solid #E0E0E1;
