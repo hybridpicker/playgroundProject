@@ -9,16 +9,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.3px;
 }
-#top-menu .navbar-nav .nav-link .active {
-  text-decoration: none;
-  color: #E0E0E1;
-  border-bottom: 0.2rem solid #E0E0E1;
-  padding-bottom: 0px;
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
-  margin-left: 0.3rem;
-  margin-right: 0.3rem;
-}
 .navbar-nav .nav-link.active {
   text-decoration: none;
   color: #E0E0E1;
@@ -192,6 +182,22 @@ footer {
     .mobile-hide {
       display: none !important;
     }
+    .navbar-nav .nav-link.active {
+      text-decoration: none;
+      color: #E0E0E1;
+      border-bottom: none;
+      padding-left: 0;
+      margin-left: 0;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+    #top-menu a:hover {
+      text-decoration: none;
+      color: #E0E0E1;
+      border-bottom: none;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -226,6 +232,22 @@ footer {
       font-size: 14px;
       text-align: center;
       line-height: 25px;
+    }
+    .navbar-nav .nav-link.active {
+      text-decoration: none;
+      color: #E0E0E1;
+      border-bottom: none;
+      padding-left: 0;
+      margin-left: 0;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+    #top-menu a:hover {
+      text-decoration: none;
+      color: #E0E0E1;
+      border-bottom: none;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
     }
 }
 
