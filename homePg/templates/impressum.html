@@ -1,0 +1,110 @@
+{% load static %}
+{% load javascript_settings_tags %}
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Font Family -->
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Montserrat');
+  </style>
+
+
+  <!-- Import JavaScript -->
+  <script type="text/javascript">{% javascript_settings %}</script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Schoensgibl CSS -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  <link rel="shortcut icon" href="{% static 'favicon/pg.ico' %}" />
+
+  <!-- Ajax -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <!-- Import Pg.JS -->
+  <script type="text/javascript" src="{% static 'js/pg.js' %}"></script>
+
+
+  <title>Playground</title>
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar_pg_main" data-offset="0">
+  <!-- Navbar -->
+  <nav id="navbar_pg_main" class="navbar sticky-top navbar-expand-lg fixed-top navbar-dark">
+    <a class="navbar-brand" href="{% url 'home' %}#top">
+      <img src="/media/images/Nav_Logo_PG_681.svg" width="30" height="30" alt="">
+    </a>
+    <a class="navbar-brand fade" href="{% url 'home' %}#top">Playground</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto" id="top-menu">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'home' %}#info">Info</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'home' %}#hoerproben">Hörproben</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'home' %}#band">Band</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'home' %}#anfragen">Anfrage</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <div class="section_impressum" id="impressum">
+    <div class="container">
+      <h1 class="chunk fade"><span>Impressum</span></h1>
+      <hr class="my-4">
+      <p>Für den Inhalt verantwortlich:</p>
+    </br>
+      <p>Claudia Idinger</p>
+      <p>+43 699 113 602 43</p>
+      <a href="mailto:booking@play-ground.at">booking@play-ground.at</a>
+    </div>
+  </div>
+</div>
+</body>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 footerLinks" align="left">
+        <span class="text-muted">
+          Playground © 2018 | <a href="#">Impressum</a> | Webdesign <a href="https://schoensgibl.com" target="_blank">Schoensgibl</a>
+        </span>
+      </div>
+      <div class="col md-2">
+      </div>
+      <div class="col-md-2" align="center">
+        <a href="https://www.facebook.com/Playground-131845666859714" target="_blank"><img src="media/social/facebook.png" alt="" width="27" height="27" hspace="5">
+          <a href="https://www.instagram.com/playground_liveband" target="_blank"><img src="media/social/instagram.png" alt="" width="27" height="27" hspace="5">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- JQuery -->
+<script src="{% static 'js/jquery-3.3.1.js' %}"></script>
+
+<!-- Optional JavaScript -->
+<script src="{% static 'js/java.js' %}"></script>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</html>

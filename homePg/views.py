@@ -10,3 +10,6 @@ def home (request):
     members = Member.objects
     infos = Info.objects
     return render(request, 'home.html', {'songs':songs, 'members':members, 'infos':infos})
+
+def impressum (request):
+    return render(request, 'impressum.html',)

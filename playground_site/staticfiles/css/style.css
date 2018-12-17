@@ -123,6 +123,26 @@ h3 {
   margin-top: 0px;
 }
 
+.section_impressum {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  margin-top: 0px;
+  height: 100vh;
+  text-align: center;
+}
+
+.section_impressum .container{
+  text-align: content;
+}
+.section_impressum .container p{
+  text-align: center;
+}
+.section_impressum .container a{
+  text-align: center;
+  color: #cf1e1e;
+}
 .btn-primary {
   background-color: #BF0C1A;
   border-color: #BF0C1A;
@@ -144,6 +164,24 @@ footer {
   width: 100%;
   line-height: 60px;
   padding-bottom: auto;
+}
+footer a:hover {
+  text-decoration: none;
+  color: #E0E0E1;
+  border-bottom: 0.2rem solid #E0E0E1;
+  padding-bottom: 0px;
+}
+#fb:hover {
+  text-decoration: none;
+  color: #E0E0E1;
+  border-bottom: none;
+  padding-bottom: 0px;
+}
+#insta:hover {
+  text-decoration: none;
+  color: #E0E0E1;
+  border-bottom: none;
+  padding-bottom: 0px;
 }
 @media screen and (max-width: 450px) {
     h1 {
@@ -167,6 +205,10 @@ footer {
       background: url(/media/images/section2mobile.jpg);
       background-position: top;
       background-attachment: unset;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .section_impressum {
       padding-left: 15px;
       padding-right: 15px;
     }
@@ -198,6 +240,7 @@ footer {
       padding-top: 0.5rem;
       padding-bottom: 0.5rem;
     }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -221,6 +264,10 @@ footer {
     .sectionC {
       background-position: top;
       background-attachment: unset;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .section_impressum {
       padding-left: 15px;
       padding-right: 15px;
     }
