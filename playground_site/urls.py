@@ -23,7 +23,8 @@ import homePg.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', homePg.views.home, name='home')
+    path('', homePg.views.home, name='home'),
+    path('impressum', homePg.views.impressum, name='impressum'),
 ]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 def javascript_settings():

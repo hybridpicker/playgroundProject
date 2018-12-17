@@ -32,7 +32,10 @@
   <title>Playground</title>
 
 </head>
+
+
 <body data-spy="scroll" data-target="#navbar_pg_main" data-offset="0">
+
   <!-- Navbar -->
   <nav id="navbar_pg_main" class="navbar sticky-top navbar-expand-lg fixed-top navbar-dark">
     <a class="navbar-brand" href="{% url 'home' %}#top">
@@ -61,6 +64,8 @@
     </div>
   </nav>
 
+
+
   <!-- Slides -->
   <div class="" id="top">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
@@ -73,6 +78,8 @@
     </div>
 
   </div>
+
+
   <!-- Welcome Banner -->
 
   <div class="section" id="info">
@@ -171,21 +178,20 @@
     <div class="row">
       <div class="col-md-8 footerLinks" align="left">
         <span class="text-muted">
-          Playground © 2018 | <a href="#">Impressum</a> | Webdesign <a href="https://schoensgibl.com" target="_blank">Schoensgibl</a>
+          Playground © 2018 | <a href="{% url 'impressum' %}">Impressum</a> | Webdesign <a href="https://schoensgibl.com" target="_blank">Schoensgibl</a>
         </span>
       </div>
       <div class="col md-2">
       </div>
       <div class="col-md-2" align="center">
-        <a href="https://www.facebook.com/Playground-131845666859714" target="_blank"><img src="media/social/facebook.png" alt="" width="27" height="27" hspace="5">
-          <a href="https://www.instagram.com/playground_liveband" target="_blank"><img src="media/social/instagram.png" alt="" width="27" height="27" hspace="5">
+        <a id="fb" href="https://www.facebook.com/Playground-131845666859714" target="_blank"><img src="media/social/facebook.png" alt="" width="27" height="27" hspace="5">
+          <a id="insta" href="https://www.instagram.com/playground_liveband" target="_blank"><img src="media/social/instagram.png" alt="" width="27" height="27" hspace="5">
           </div>
         </div>
       </div>
     </div>
   </div>
 </footer>
-
 
 <!-- JQuery -->
 <script src="{% static 'js/jquery-3.3.1.js' %}"></script>
