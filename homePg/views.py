@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+
 from song.models import Song
 from band.models import Member
 from band.models import Info
@@ -6,6 +7,12 @@ from contact.forms import ContactForm
 from contact.email import contact_mail
 
 # Create your views here.
+
+
+def view_404(request):
+    # make a redirect to homepage
+    return redirect('/')
+
 
 def home (request):
     songs = Song.objects
