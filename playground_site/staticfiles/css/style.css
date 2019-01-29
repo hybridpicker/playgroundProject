@@ -54,6 +54,10 @@ position: absolute;
 width: 100%;
 }
 
+p input {
+  width: 800px;
+}
+
 #info {
     text-align: center;
 }
@@ -149,6 +153,9 @@ h3 {
 }
 a {
   color: #E0E0E1;
+}
+#mailto_pg {
+  color: #B11C11;
 }
 #top-menu a:hover {
   text-decoration: none;

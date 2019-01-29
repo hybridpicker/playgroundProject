@@ -146,28 +146,16 @@
 
         <hr class="my-4">
 
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Name</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Vor- und Zuname">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Email-Adresse</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@ebeispiel.com">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">Bitte wählen Sie aus:</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>Anfrage</option>
-            <option>Anregung</option>
-            <option>Wunsch</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Nachricht:</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary mb-2">Absenden</button>
-      </form>
+
+
+        <h3>Sie wollen uns buchen?</h3>
+        <br>
+        <p class="lead">Claudia Idinger</p>
+        <p class="lead">
+        <a id="mailto_pg" href="mailto:booking@play-ground.at">booking@playground.at</a>
+      </p>
+        <p class="lead">+43 699 113 602 43</p>
+
     </div>
   </div>
 </div>
@@ -178,7 +166,7 @@
     <div class="row">
       <div class="col-md-8 footerLinks" align="left">
         <span class="text-muted">
-          Playground © 2018 | <a href="{% url 'impressum' %}">Impressum</a> | Webdesign <a href="https://schoensgibl.com" target="_blank">Schoensgibl</a>
+          Playground © {% now "Y" %} | <a href="{% url 'impressum' %}">Impressum</a> | Webdesign <a href="https://schoensgibl.com" target="_blank">Schoensgibl</a>
         </span>
       </div>
       <div class="col md-2">
