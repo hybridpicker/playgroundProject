@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'homePg',
+    'contact',
     'javascript_settings',
     'song.apps.SongConfig',
     'band.apps.BandConfig',
