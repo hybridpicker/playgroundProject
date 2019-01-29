@@ -27,16 +27,14 @@ SECRET_KEY = 'insq%^!vbk*1%q&odxogqmu4^ghb+hw^4ik*3hb=bhui)umt&c'
 DEBUG = True
 if 'RDS_DB_NAME' in os.environ:
     ALLOWED_HOSTS = [
-#        gethostname(),
-#        gethostbyname(gethostname()),
+        gethostname(),
+        gethostbyname(gethostname()),
+        '.elasticbeanstalk.com',
         'play-ground.at',
         'www.play-ground.at'
         ]
 else:
-    ALLOWED_HOSTS =['localhost',
-                    'play-ground.at',
-                    'www.play-ground.at'
-                    ]
+    ALLOWED_HOSTS =['localhost']
 
 # Application definition
 INSTALLED_APPS = [
@@ -47,7 +45,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'homePg',
-    'contact',
     'javascript_settings',
     'song.apps.SongConfig',
     'band.apps.BandConfig',
