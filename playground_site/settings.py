@@ -27,16 +27,14 @@ SECRET_KEY = 'insq%^!vbk*1%q&odxogqmu4^ghb+hw^4ik*3hb=bhui)umt&c'
 DEBUG = True
 if 'RDS_DB_NAME' in os.environ:
     ALLOWED_HOSTS = [
-#        gethostname(),
-#        gethostbyname(gethostname()),
-        'play-ground.at',
-        'www.play-ground.at'
+        gethostname(),
+        gethostbyname(gethostname()),
+        '.elasticbeanstalk.com',
         ]
 else:
     ALLOWED_HOSTS =['localhost',
                     'play-ground.at',
-                    'www.play-ground.at'
-                    ]
+                    'www.play-ground.at',]
 
 # Application definition
 INSTALLED_APPS = [
@@ -47,7 +45,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'homePg',
-    'contact',
     'javascript_settings',
     'song.apps.SongConfig',
     'band.apps.BandConfig',
@@ -118,6 +115,7 @@ else:
 if 'test' in sys.argv or 'test_coverage' in sys.argv:
     DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
 
+FILE_UPLOAD_PERMISSIONS = 0o644
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
