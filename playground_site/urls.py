@@ -20,6 +20,8 @@ from django.contrib.staticfiles.urls import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 import homePg.views
 
+handler404 = 'homePg.views.view_404'
+handler500 = 'homePg.views.view_404'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
