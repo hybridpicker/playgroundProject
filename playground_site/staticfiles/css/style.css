@@ -155,7 +155,11 @@ a {
   color: #E0E0E1;
 }
 #mailto_pg {
-  color: #B11C11;
+  color: #BF0C1A;
+}
+#mailto_pg:hover {
+  text-decoration: none;
+  color: #E0E0E1;
 }
 #top-menu a:hover {
   text-decoration: none;
