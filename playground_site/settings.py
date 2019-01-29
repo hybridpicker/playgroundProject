@@ -31,7 +31,7 @@ if 'RDS_DB_NAME' in os.environ:
         gethostbyname(gethostname()),
         '.elasticbeanstalk.com',
         'play-ground.at',
-        'www.play-ground.at'
+        'www.play-ground.at',
         ]
 else:
     ALLOWED_HOSTS =['localhost']
